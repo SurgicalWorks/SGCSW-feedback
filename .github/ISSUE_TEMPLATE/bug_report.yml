@@ -1,0 +1,69 @@
+name: Bug report
+description: Reporta un bug o comportamiento inesperado en SGCSW
+title: "[Bug]: "
+labels: ["needs-triage", "type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar el problema.
+
+        **Importante:** no incluyas datos personales, datos clínicos, credenciales, tokens, URLs privadas ni capturas con información sensible.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumen
+      description: Explica el problema en una frase clara.
+      placeholder: Al refrescar la página, la sesión se pierde...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Lista los pasos exactos para reproducir el problema.
+      placeholder: |
+        1. Entrar en...
+        2. Pulsar...
+        3. Ver error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+      description: Qué debería haber pasado.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado obtenido
+      description: Qué pasó realmente.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto
+      options:
+        - Bloquea el trabajo
+        - Molesta pero hay alternativa
+        - Menor / cosmético
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Entorno
+      description: Navegador, dispositivo o contexto si aplica.
+      placeholder: Chrome Windows, Safari iPad, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Capturas o notas adicionales
+      description: Solo si no contienen información sensible.
+    validations:
+      required: false
