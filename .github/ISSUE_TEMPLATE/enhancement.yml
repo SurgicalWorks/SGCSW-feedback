@@ -1,0 +1,75 @@
+name: Mejora funcional
+description: Propón una mejora o nueva necesidad funcional para SGCSW
+title: "[Mejora]: "
+labels: ["needs-triage", "type:feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Usa esta plantilla para proponer mejoras funcionales o cambios de experiencia de usuario.
+
+        **Importante:** no incluyas datos personales, datos clínicos, credenciales, tokens, URLs privadas ni capturas con información sensible.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema o necesidad
+      description: Explica qué problema quieres resolver o qué necesidad has detectado.
+      placeholder: Actualmente cuando intento..., sería útil poder...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta de mejora
+      description: Describe cómo te gustaría que funcionara.
+      placeholder: Me gustaría que SGCSW permitiera...
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Beneficio esperado
+      description: Explica qué mejora aporta para usuarios, proceso o seguridad.
+      placeholder: Esto reduciría errores porque...
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad percibida
+      options:
+        - Alta - bloquea o afecta mucho al flujo de trabajo
+        - Media - mejora importante pero hay alternativa
+        - Baja - mejora deseable
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área afectada
+      options:
+        - Acceso / login
+        - Casos / workflow clínico-operativo
+        - PN / sincronización externa
+        - Documentación / documentos
+        - Compras / proveedores
+        - Interfaz / usabilidad
+        - Notificaciones / email
+        - Seguridad / permisos
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas o workaround actual
+      description: Si ahora resolvéis esto de otra forma, descríbelo.
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notas adicionales
+      description: Añade contexto adicional, sin información sensible.
+    validations:
+      required: false
