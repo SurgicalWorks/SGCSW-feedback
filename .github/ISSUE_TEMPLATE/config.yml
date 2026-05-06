@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Incidencia con datos sensibles
+    url: https://sg.surgicalworks.es
+    about: No publiques datos sensibles en GitHub. Usa el canal privado acordado.
